@@ -10,6 +10,9 @@ body {
     background-color: rgba(255,255,255,.8);
 }
 
+.material-symbols-outlined{
+    cursor: pointer;
+}
 
 .navbar {
     display: flex;
@@ -19,10 +22,6 @@ body {
     margin-top: .5rem;
 }
 
-.top-left {
-    margin-left: 1rem;
-}
-
 #menu {
     margin-left: 15px;
     margin-top:5px;
@@ -30,29 +29,74 @@ body {
 
 .logo {
    position: absolute;
-   left:55px;
+   left:60px;
    width: 100px;
    height: auto;
    margin-right: 55rem;
+   cursor:pointer;
+}
+
+.search {
+    display: flex;
+    margin:0
 }
 
 .searchbar {
     width:40em;
     height:2.3rem;
-    padding-right: 10rem;
     margin-top: .5rem;
+    
 }
 
+.search-button{
+    width: 3.6rem;
+    height:2.3rem;
+    margin-top: .5rem;
+    cursor:pointer;
+}
 
-.video-section {
+.menu {
+   padding:1rem;
+   margin-right: 100px;
+   border:3px black solid;
+}
+
+.top-right {
+    width: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-between;
+}
+
+.video-section-right {
+    position:absolute;
+    top:60px;
+    width: 87%;
+    border: 5px red solid;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-    gap: 3rem 2rem;
-    padding: 3rem 0;
-    margin: 1.5rem 0rem 1.5rem 10rem;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 3rem 1.5rem;
+    padding: 3rem 1rem;
+    margin: 1.5rem 0rem 1.5rem 11rem;
     border-top: solid #555 3px;
+   
 }
 
+.video-section-left {
+    border: 5px red solid;
+    width:9%;
+}
+
+.menu-item {
+    width:10px;
+    padding:.5rem
+}
 .video-section:first-child {
     border-top: none;
 }
