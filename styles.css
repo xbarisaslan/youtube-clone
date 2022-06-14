@@ -123,6 +123,10 @@ body {
     background-color: rgba(237, 236, 236, 0.8);
 }
 
+.menu-item:last-child{
+    margin-bottom: 1rem;
+}
+
 .menu-home {
     display:flex;
     align-items: center;
@@ -233,7 +237,7 @@ body {
     color:#555;
 }
 
-.music {
+.video-header {
     display:flex;
     grid-column: 1 / -1;
     margin: -.5rem 0.5rem;
