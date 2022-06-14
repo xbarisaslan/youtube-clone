@@ -12,6 +12,9 @@ body {
 
 .material-symbols-outlined{
     cursor: pointer;
+    align-items: center;
+    margin-right: .8rem;
+    margin-bottom: 1px;
 }
 
 .navbar {
@@ -25,6 +28,7 @@ body {
 #menu {
     margin-left: 15px;
     margin-top:5px;
+    margin-bottom: 8px;
 }
 
 .logo {
@@ -43,67 +47,103 @@ body {
 
 .searchbar {
     width:40em;
-    height:2.3rem;
+    height:2.6rem;
     margin-top: .5rem;
-    
+    margin-left: 1.5rem;
+    border:rgba(218, 217, 217, 0.6) solid 1px;
 }
 
 .search-button{
-    width: 3.6rem;
-    height:2.3rem;
+    display: flex;
+    align-items: center;
+    width: 2.6rem;
     margin-top: .5rem;
+    border:rgba(218, 217, 217, 0.6) solid 1px;
+    background-color:rgba(219, 215, 217, 0.8); ;
     cursor:pointer;
 }
 
-.menu {
-   padding:1rem;
-   margin-right: 100px;
-   border:3px black solid;
-}
-
 .top-right {
-    width: 6.5rem;
     display: flex;
     justify-content: space-between;
     margin-right: 1rem;
 }
 
-.videos {
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: space-between;
+.top-right .material-symbols-outlined {
+    margin-top: .3rem;
+    padding-right: .7rem;
 }
 
 .video-section-right {
     position:absolute;
     top:60px;
-    width: 87%;
+    width: 84%;
     border: 5px red solid;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 3rem 1.5rem;
-    padding: 3rem 1rem;
-    margin: 1.5rem 0rem 1.5rem 11rem;
+    padding: 3rem .3rem 0 3rem;
+    margin: 1.5rem 0rem 1.5rem 15rem;
     border-top: solid #555 3px;
-   
 }
 
 .video-section-left {
-    border: 5px red solid;
-    width:9%;
+    border: 3px red solid;
+    width:15%;
+    margin-top:2rem;
 }
 
 .menu-item {
-    width:10px;
-    padding:.5rem
+    display:flex;
+    align-items: center;
+    width: 100%;
+    padding: .7rem .3rem;
+    margin-right: 100px;
+    font-size: .9rem;
+    cursor:pointer;
 }
-.video-section:first-child {
-    border-top: none;
+
+.menu-item:hover{
+    background-color: rgba(237, 236, 236, 0.8);
 }
-    
+
+.menu-home {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    padding: .7rem .3rem;
+    margin-right: 100px;
+    font-size: .9rem;
+    background-color:rgba(219, 215, 217, 0.8);
+    cursor:pointer;
+}
+
+#subscriptions-header{
+    margin-left:.7rem;
+    margin-bottom:.4rem;
+}
+
+.subscriptions {
+    border-top: 1px rgba(218, 211, 214, 0.8) solid ;
+    border-bottom: 1px rgba(218, 211, 214, 0.8) solid;
+}
+
+.subscribed {
+    padding: .5rem;
+    margin-left:.5rem;
+    margin-bottom:.3rem;
+    cursor:pointer;
+}
+
+.subscribed:hover{
+    background-color:rgba(237, 236, 236, 0.8);
+}
+
 .video-container {
     display: flex;
     flex-direction: column;
+    margin-top:0;
+    padding-top:0;
 }
 
 .thumbnail {
