@@ -50,7 +50,7 @@ body {
 .searchbar {
     width:40em;
     height:2.6rem;
-    margin-top: .5rem;
+    margin-top: .2rem;
     margin-left: 5rem;
     border:rgba(218, 217, 217, 1) solid 1px;
     outline: none;
@@ -60,7 +60,7 @@ body {
     display: flex;
     align-items: center;
     padding: .3rem 1rem;
-    margin-top: .5rem;
+    margin-top: .2rem;
     border:rgba(218, 217, 217, 0.6) solid 1px;
     background-color:rgba(219, 215, 217, 0.2); ;
     cursor:pointer;
@@ -122,6 +122,7 @@ body {
     align-items: center;
     padding: .7rem .3rem;
     font-size: .9rem;
+    height:2.5rem;
     cursor:pointer;
 }
 
@@ -139,6 +140,7 @@ body {
     width: 100%;
     padding: .7rem .3rem;
     font-size: .9rem;
+    height:2.5rem;
     background-color:rgba(219, 215, 217, 0.8);
     cursor:pointer;
     font-weight: bold;
@@ -161,6 +163,8 @@ body {
     text-align: center;
     padding: .5rem;
     margin-bottom:.3rem;
+    font-size: .9rem;
+    height:3rem;
     cursor:pointer;
 }
 
@@ -248,4 +252,8 @@ body {
     grid-column: 1 / -1;
     margin: -.5rem 0.5rem;
     color:black;
+}
+
+#settings {
+    margin-top:.5rem
 }
